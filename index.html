@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="icon" type="image/png" href="image.png">
+    <title>my website</title>
+    <style>.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: rgb(0, 0, 0);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(0, 0, 0);;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+         a {
+            color: rgb(0, 0, 0); 
+            text-decoration:underline;
+            transition: color 0.3s ease; 
+        }
+
+        
+        a:hover {
+            color: rgb(111, 232, 241);
+        }
+
+        
+        a:active {
+            color: rgb(144, 241, 120); 
+        }
+        body {
+          
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: hsl(0, 0%, 0%);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #000000;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration-skip: ink;;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            font-size:large;
+        }
+        footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #home {
+            color:rgb(0, 0, 0);
+            background-color: #08d1d1;
+          
+
+        }
+
+        #about {
+            color:#000000;
+            background-color: #bbe251;
+        }
+
+         #events {
+            color:rgb(0, 0, 0);
+            background-color: rgb(8, 209, 209);
+          
+
+        }
+        
+
+        #gallery {
+            color:#000000;
+            background: #bbe251;
+        }
+
+        #teams {
+            color:rgb(0, 0, 0);
+            background-color: rgb(8, 209, 209);
+          
+
+        }
+
+        #software_team, #hardware_team,#doc_team {
+            color:rgb(8, 209, 209);
+            background-color: rgb(0, 0, 0);
+          
+        }
+
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+       
+        h4 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  opacity: 0.75;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  text-align: left;
+  width: 70%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h3 {
+
+        border-bottom: 1px solid rgba(17, 17, 17, 0.5);
+  color: rgb(102, 112, 10);
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  text-align: left;
+  width: 70%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <image src="image1.jpeg" width="400" height="200"></image>
+        <h1> <!-- heading --> </h1>
+    </header>
+    
+
+    <nav>
+        <a href="#home">Home</a> 
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        
+        <div class="dropdown">
+            <a href="#teams">Teams</a>
+            
+            <div class="dropdown-content">
+                <a href="#software_team">software team</a>
+                <a href="#hardware_team">hardware team</a>
+                <a href="#doc_team">doc team</a>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <h3>What is EdVenture Park?</h3>
+        <p>
+            EdVenture Park is a student-focused idea stage startup incubator which aims to empower student led startups through an intensive 4 month pre Incubation programme. This pre incubation programme is specially curated for students and as per their schedule.
+            
+            Any student having an entrepreneurial idea can apply for the Pre Incubation Program at EdVenture Park where we will be working with those student entrepreneurs, taking them through the fundamental tracks of building a company, organising exclusive sessions/workshops and giving them all the support & guidance they need for them to take their idea to the next level. Students can experiment with their ideas and have an opportunity of starting their own company while still in college.</p>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>We are India's first and finest student-focused idea stage startup incubator</p>
+    </section>
+    <section id="events">
+        <h2>Events</h2>
+        <h3>Founders Friday</h3>
+        <h4>    To celebrate the Founder in You! </h4>
+            
+            <p>This is an agenda free, action intensive, high on ideas event that includes crowd pitching to validate your ideas, your early adopters too , its basically a networking event wherein you can find and connect with founders, co-founders, and technical experts from the ecosystem. Outcomes of this event you can give your feedbacks and suggestions on a idea and not only help yourself by gaining experience but also at the same time helping a person solve the issue that he/she was facing. In this event you can share your ideas, art and suggestions openly without fearing being laughed at or judged by someone, because we at this event make sure that no-one is judged based upon their opinions and perspective.</p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Check out some of our works...</p>
+        <section id="gallery" class="gallery">
+            <img src="images/image1.jpg" alt="Image 1">
+            <img src="images/image2.jpg" alt="Image 2">
+            <img src="images/image3.jpg" alt="Image 3">
+            <img src="images/image4.jpg" alt="Image 4">
+            <img src="images/image5.jpg" alt="Image 5">
+            <img src="images/image7.jpg" alt="Image 6">
+            <img src="images/image8.jpg" alt="Image 7">
+            <img src="images/image9.jpg" alt="Image 8">
+            <img src="images/image10.jpg" alt="Image 9">
+            <img src="images/image12.jpg" alt="Image 10">
+            <img src="images/image13.png" alt="Image 11">
+            <img src="images/image14.jpg" alt="Image 12">
+            <img src="images/image15.jpg" alt="Image 13">
+            <img src="images/image16.jpg" alt="Image 14">
+            <img src="images/image17.jpg" alt="Image 15">
+            <img src="images/image18.jpg" alt="Image 15">
+            <img src="images/image20.jpg" alt="Image 17">
+            
+           
+            <!-- Add more images as needed -->
+        </section>
+    </section>
+
+    <section id="teams">
+        <h2>Teams</h2>
+        <p>Our teams...</p>
+            <section id="software_team">
+                <h3>Software team</h3>
+                <p>Details about Software team...</p>
+            </section>
+            <section id="hardware_team">
+                <h3>Hardware team</h3>
+                <p>Details about Hardware team...</p>
+            </section>
+            <section id="doc_team">
+                <h3>doc team</h3>
+                <p>Details about Doc team...</p>
+            </section>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
